@@ -7,5 +7,5 @@ This is a simple web API created using Flask and Flask-SQLAlchemy. It features t
 - Serialize data to multiple formats
 
 # References
-https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
-https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/
+- https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
+- https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/
