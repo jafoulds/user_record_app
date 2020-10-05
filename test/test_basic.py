@@ -1,5 +1,4 @@
 import os
-import requests
 import unittest
 
 from user_record_app import create_app, db
@@ -108,14 +107,14 @@ class BasicTests(unittest.TestCase):
         """
         Tests if it can serialize data to json.
         """
-        response = self.app.get("{}/api/v1/users/serialize/json".format(BASE_URL))
+        response = self.app.get("{}/api/v1/users/all/serialize/json".format(BASE_URL))
         self.assertEqual(response.status_code, 200)
 
     def test_serialize_invalid_format(self):
         """
         Tests if serializing fails when given an invalid output format.
         """
-        response = self.app.get("{}/api/v1/users/serialize/invalid_format".format(BASE_URL))
+        response = self.app.get("{}/api/v1/users/all/serialize/invalid_format".format(BASE_URL))
         self.assertEqual(response.status_code, 500)
 
 if __name__ == "__main__":
